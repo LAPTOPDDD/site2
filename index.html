@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="CG UpFlow — фотореалистичная интерьерная визуализация и онлайн-обучение 3Ds Max + Corona Renderer" />
+<title>CG UpFlow — Визуализации как фотографии. Обучение с нуля.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- Header -->
+<header class="header" id="header">
+  <div class="container header__inner">
+    <a href="#hero" class="logo">
+      <span class="logo__mark">CG</span>
+      <span class="logo__text">UpFlow</span>
+    </a>
+    <nav class="nav">
+      <a href="#services" data-nav>Услуги</a>
+      <a href="#portfolio" data-nav>Портфолио</a>
+      <a href="#process" data-nav>Процесс</a>
+      <a href="#pricing" data-nav>Тарифы</a>
+      <a href="#reviews" data-nav>Отзывы</a>
+      <a href="#faq" data-nav>FAQ</a>
+    </nav>
+    <a href="#contact" class="btn btn--ghost btn--sm">Связаться</a>
+    <button class="burger" id="burger" aria-label="Меню">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="hero" id="hero">
+  <div class="hero__bg"></div>
+  <div class="hero__glow"></div>
+  <div class="container hero__inner">
+    <div class="hero__content reveal">
+      <span class="eyebrow">3Ds Max · Corona Renderer</span>
+      <h1 class="hero__title">
+        Визуализации<br/>
+        <span class="accent">как фотографии</span>
+      </h1>
+      <p class="hero__subtitle">
+        Фотореалистичная интерьерная визуализация и онлайн-обучение
+        с нуля за 7 недель. Архитектурное образование, внимание к деталям,
+        рендеры, которые не отличить от снимка.
+      </p>
+      <div class="hero__cta">
+        <a href="#contact" class="btn btn--primary">Заказать визуализацию</a>
+        <a href="#pricing" class="btn btn--outline">Начать обучение</a>
+      </div>
+      <div class="hero__stats">
+        <div class="stat"><span class="stat__num" data-count="350">0</span><span class="stat__lbl">проектов сдано</span></div>
+        <div class="stat"><span class="stat__num" data-count="200">0</span><span class="stat__lbl">учеников</span></div>
+        <div class="stat"><span class="stat__num" data-count="7">0</span><span class="stat__lbl">лет опыта</span></div>
+      </div>
+    </div>
+    <div class="hero__media reveal">
+      <div class="hero__card">
+        <img src="https://90f1661d-2ff4-4f29-b07c-0e47453ca691.selstorage.ru/site529222/f302d3bc-45a5-494b-b1d3-11be96462a48/f302d3bc-45a5-494b-b1d3-11be96462a48-10602539.jpeg" alt="Интерьерная визуализация" loading="lazy"/>
+        <div class="hero__card-tag">Live · Москва</div>
+      </div>
+      <div class="hero__card hero__card--small">
+        <img src="https://90f1661d-2ff4-4f29-b07c-0e47453ca691.selstorage.ru/site529222/c93738d5-3e06-429c-af79-6a3c2cf7180a/c93738d5-3e06-429c-af79-6a3c2cf7180a-10602146.jpeg" alt="Интерьер" loading="lazy"/>
+      </div>
+    </div>
+  </div>
+  <div class="hero__scroll">
+    <span>scroll</span>
+    <div class="line"></div>
+  </div>
+</section>
+
+<!-- Marquee -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee__track">
+    <span>3Ds Max</span><span class="dot">●</span>
+    <span>Corona Renderer</span><span class="dot">●</span>
+    <span>Фотореализм</span><span class="dot">●</span>
+    <span>Interior Visualization</span><span class="dot">●</span>
+    <span>Архитектурное образование</span><span class="dot">●</span>
+    <span>3Ds Max</span><span class="dot">●</span>
+    <span>Corona Renderer</span><span class="dot">●</span>
+    <span>Фотореализм</span><span class="dot">●</span>
+    <span>Interior Visualization</span><span class="dot">●</span>
+    <span>Архитектурное образование</span><span class="dot">●</span>
+  </div>
+</div>
+
+<!-- Services -->
+<section class="section" id="services">
+  <div class="container">
+    <div class="section__head reveal">
+      <span class="eyebrow">Что мы делаем</span>
+      <h2 class="section__title">Два направления —<br/><span class="accent">один уровень качества</span></h2>
+    </div>
+    <div class="services">
+      <article class="service-card reveal">
+        <div class="service-card__num">01</div>
+        <h3>Заказать визуализацию</h3>
+        <p>Рендеры интерьеров элитных ЖК, ресторанов, офисов и жилых помещений. Договор, сроки, постобработка.</p>
+        <ul class="checks">
+          <li>Архитектурное образование команды</li>
+          <li>Не ограничиваем количество ракурсов</li>
+          <li>Две итерации правок в стоимости</li>
+          <li>Гибкие условия при долгосрочном сотрудничестве</li>
+        </ul>
+        <a href="#contact" class="link-arrow">Заказать <span>→</span></a>
+      </article>
+
+      <article class="service-card service-card--accent reveal">
+        <div class="service-card__num">02</div>
+        <h3>Научиться визуализации</h3>
+        <p>Онлайн-курс 3Ds Max + Corona Renderer с нуля за 7 недель. Индивидуальный формат, поддержка навсегда.</p>
+        <ul class="checks">
+          <li>Видеоуроки от 5 до 45 минут</li>
+          <li>Персональный чат с преподавателями 1-на-1</li>
+          <li>Доступ к курсу — навсегда</li>
+          <li>Трудоустройство лучших выпускников</li>
+        </ul>
+        <a href="#pricing" class="link-arrow">Выбрать тариф <span>→</span></a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- Why us -->
+<section class="section section--alt">
+  <div class="container">
+    <div class="section__head reveal">
+      <span class="eyebrow">Почему мы</span>
+      <h2 class="section__title">Работаем так,<br/><span class="accent">как хотели бы, чтобы работали с нами</span></h2>
+    </div>
+    <div class="features">
+      <div class="feature reveal"><div class="feature__icon">◈</div><h4>Архитектурное образование</h4><p>Понимаем с полуслова дизайнеров и архитекторов.</p></div>
+      <div class="feature reveal"><div class="feature__icon">◇</div><h4>Элитные объекты</h4><p>ЖК, рестораны, бары, офисы, жилые пространства.</p></div>
+      <div class="feature reveal"><div class="feature__icon">◉</div><h4>Договор и сроки</h4><p>Заключаем договор и соблюдаем оговорённые сроки.</p></div>
+      <div class="feature reveal"><div class="feature__icon">◐</div><h4>Команда</h4><p>Распараллеливаем работу — сдаём быстро без потери качества.</p></div>
+      <div class="feature reveal"><div class="feature__icon">◊</div><h4>Постобработка</h4><p>Adobe Photoshop, render passes, финальный блеск.</p></div>
+      <div class="feature reveal"><div class="feature__icon">◌</div><h4>Трудоустройство</h4><p>Лучшим выпускникам передаём реальные заказы.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- Portfolio -->
+<section class="section" id="portfolio">
+  <div class="container">
+    <div class="section__head reveal">
+      <span class="eyebrow">Портфолио</span>
+      <h2 class="section__title">Работы, которые говорят<br/><span class="accent">сами за себя</span></h2>
+    </div>
+    <div class="gallery">
+      <a class="gallery__item gallery__item--lg reveal" href="#"><img loading="lazy" src="https://90f1661d-2ff4-4f29-b07c-0e47453ca691.selstorage.ru/site529222/f302d3bc-45a5-494b-b1d3-11be96462a48/f302d3bc-45a5-494b-b1d3-11be96462a48-10602539.jpeg" alt=""/></a>
+      <a class="gallery__item reveal" href="#"><img loading="lazy" src="https://90f1661d-2ff4-4f29-b07c-0e47453ca691.selstorage.ru/site529222/c93738d5-3e06-429c-af79-6a3c2cf7180a/c93738d5-3e06-429c-af79-6a3c2cf7180a-10602146.jpeg" alt=""/></a>
+      <a class="gallery__item reveal" href="#"><img loading="lazy" src="https://90f1661d-2ff4-4f29-b07c-0e47453ca691.selstorage.ru/site529222/16ba982d-7a7c-4052-815a-835979270ef3/16ba982d-7a7c-4052-815a-835979270ef3-10602149.jpeg" alt=""/></a>
+      <a class="gallery__item reveal" href="#"><img loading="lazy" src="https://90f1661d-2ff4-4f29-b07c-0e47453ca691.selstorage.ru/site529222/2d41467a-bd2d-420f-9fd5-5d5cebd308ec/2d41467a-bd2d-420f-9fd5-5d5cebd308ec-10602157.jpeg" alt=""/></a>
+      <a class="gallery__item reveal" href="#"><img loading="lazy" src="https://90f1661d-2ff4-4f29-b07c-0e47453ca691.selstorage.ru/site529222/89397460-a5fa-4ab9-9f2f-07c0e8500882/89397460-a5fa-4ab9-9f2f-07c0e8500882-10602184.jpeg" alt=""/></a>
+      <a class="gallery__item gallery__item--lg reveal" href="#"><img loading="lazy" src="https://90f1661d-2ff4-4f29-b07c-0e47453ca691.selstorage.ru/site529222/8fe7cb23-519a-4b7d-b336-a4c8e5a79fb9/8fe7cb23-519a-4b7d-b336-a4c8e5a79fb9-10602177.jpeg" alt=""/></a>
+      <a class="gallery__item reveal" href="#"><img loading="lazy" src="https://90f1661d-2ff4-4f29-b07c-0e47453ca691.selstorage.ru/site529222/8d16752b-41d8-4498-87f3-bd09a0a0aff1/8d16752b-41d8-4498-87f3-bd09a0a0aff1-10602187.jpeg" alt=""/></a>
+      <a class="gallery__item reveal" href="#"><img loading="lazy" src="https://90f1661d-2ff4-4f29-b07c-0e47453ca691.selstorage.ru/site529222/8b2a864f-fa6d-43cf-b14a-d2d65eeb9c3e/8b2a864f-fa6d-43cf-b14a-d2d65eeb9c3e-10602210.jpeg" alt=""/></a>
+      <a class="gallery__item reveal" href="#"><img loading="lazy" src="https://90f1661d-2ff4-4f29-b07c-0e47453ca691.selstorage.ru/site529222/a618d500-6939-4d90-b14e-b272940ad4b2/a618d500-6939-4d90-b14e-b272940ad4b2-10602216.jpeg" alt=""/></a>
+      <a class="gallery__item reveal" href="#"><img loading="lazy" src="https://90f1661d-2ff4-4f29-b07c-0e47453ca691.selstorage.ru/site529222/9afb3fbc-246e-44ac-82f5-cb85db1dc133/9afb3fbc-246e-44ac-82f5-cb85db1dc133-10602223.jpeg" alt=""/></a>
+    </div>
+  </div>
+</section>
+
+<!-- Process -->
+<section class="section section--dark" id="process">
+  <div class="container">
+    <div class="section__head reveal">
+      <span class="eyebrow">Как мы работаем</span>
+      <h2 class="section__title">Шесть шагов до<br/><span class="accent">идеального рендера</span></h2>
+    </div>
+    <ol class="steps">
+      <li class="step reveal"><span class="step__num">01</span><h4>Техническое задание</h4><p>Определяем объём работ, формируем предложение по стоимости и срокам.</p></li>
+      <li class="step reveal"><span class="step__num">02</span><h4>Превью интерьера</h4><p>Черновые рендеры для согласования концепции.</p></li>
+      <li class="step reveal"><span class="step__num">03</span><h4>Правки</h4><p>Две итерации корректировок в стоимости проекта.</p></li>
+      <li class="step reveal"><span class="step__num">04</span><h4>Согласование</h4><p>Отправляем превью с внесёнными изменениями.</p></li>
+      <li class="step reveal"><span class="step__num">05</span><h4>Ракурсы</h4><p>Обговариваем все необходимые видовые точки.</p></li>
+      <li class="step reveal"><span class="step__num">06</span><h4>Финал</h4><p>Рендеры в высоком качестве с постобработкой.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- Founder -->
+<section class="section">
+  <div class="container founder">
+    <div class="founder__media reveal">
+      <img src="https://90f1661d-2ff4-4f29-b07c-0e47453ca691.selstorage.ru/site529222/0ebcf0cd-a96e-45fa-8c88-0d0b3f77f5ee/0ebcf0cd-a96e-45fa-8c88-0d0b3f77f5ee-13752630.jpeg" alt="Елена Асеева"/>
+      <div class="founder__signature">Е. Асеева</div>
+    </div>
+    <div class="founder__body reveal">
+      <span class="eyebrow">Основатель</span>
+      <h2 class="section__title">Елена Асеева</h2>
+      <p class="lead">
+        Магистр архитектуры. С коллегами-дизайнерами и архитекторами
+        говорю на одном языке и понимаю с полуслова.
+      </p>
+      <p>
+        За время работы 3D-визуализатором сформировала свою онлайн-школу
+        и подружила с миром 3D-графики ни один десяток человек.
+        Сегодня это крутые специалисты, которые трудятся в нашей команде.
+        Без потери качества и увеличения стоимости мы быстро справляемся
+        с любыми проектами — можем разделить работу внутри коллектива.
+      </p>
+      <div class="socials">
+        <a href="https://t.me/el_zhii" target="_blank" rel="noopener">Telegram</a>
+        <a href="https://wa.me/79290002224" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="https://vk.com/el_zhi" target="_blank" rel="noopener">VK</a>
+        <a href="https://www.youtube.com/channel/UChHBMDmpAFmwZE9DY-y9QVA" target="_blank" rel="noopener">YouTube</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Pricing -->
+<section class="section section--alt" id="pricing">
+  <div class="container">
+    <div class="section__head reveal">
+      <span class="eyebrow">Тарифы на обучение</span>
+      <h2 class="section__title">Выберите свой<br/><span class="accent">формат обучения</span></h2>
+      <p class="section__sub">Все форматы МАКСИ и ПРЕМИУМ — индивидуальное обучение 1-на-1. Старт в удобный день, доступ навсегда.</p>
+    </div>
+    <div class="prices">
+      <article class="price reveal">
+        <h3 class="price__name">Лайт</h3>
+        <div class="price__cost"><span class="price__from">от</span>32 900 ₽</div>
+        <p class="price__sub">Самостоятельное прохождение курса по 3Ds Max. Все уроки без обратной связи.</p>
+        <ul class="checks">
+          <li>Все видеоуроки курса</li>
+          <li>Доступ навсегда</li>
+          <li>Без проверки заданий</li>
+          <li>Без куратора</li>
+        </ul>
+        <a href="#contact" class="btn btn--outline btn--block">Выбрать</a>
+      </article>
+
+      <article class="price price--featured reveal">
+        <div class="price__badge">Хит</div>
+        <h3 class="price__name">Макси</h3>
+        <div class="price__cost">49 900 ₽</div>
+        <p class="price__sub">Для тех, кто серьёзно планирует зарабатывать на 3D-визуализации.</p>
+        <ul class="checks">
+          <li>Проверка домашних заданий</li>
+          <li>Поддержка 7 дней в неделю</li>
+          <li>Итоговый видео-разбор сцены</li>
+          <li>Реальные заказы лучшим выпускникам</li>
+        </ul>
+        <a href="#contact" class="btn btn--primary btn--block">Выбрать</a>
+      </article>
+
+      <article class="price reveal">
+        <h3 class="price__name">Премиум</h3>
+        <div class="price__cost">72 900 ₽</div>
+        <p class="price__sub">Всё, что есть в «Макси» + работа над двумя учебными сценами под кураторством.</p>
+        <ul class="checks">
+          <li>2 учебные сцены под руководством</li>
+          <li>Видео-разборы обеих сцен</li>
+          <li>Сопровождение после курса</li>
+          <li>Реальные заказы лучшим выпускникам</li>
+        </ul>
+        <a href="#contact" class="btn btn--outline btn--block">Выбрать</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- Reviews -->
+<section class="section" id="reviews">
+  <div class="container">
+    <div class="section__head reveal">
+      <span class="eyebrow">Отзывы</span>
+      <h2 class="section__title">Наши выпускники<br/><span class="accent">довольны обучением</span></h2>
+    </div>
+    <div class="reviews">
+      <figure class="review reveal">
+        <blockquote>«Уроки понятные, систематизированные, без воды и только по существу. Преподаватели отвечали под 11 вечера — такой самоотдачи стоит поклониться!»</blockquote>
+        <figcaption><strong>Антон Леусенков</strong><span>Выпускник</span></figcaption>
+      </figure>
+      <figure class="review reveal">
+        <blockquote>«Было много страхов — слабый комп, нулевые знания, маленький ребёнок. Училась по ночам, ответы получала почти сразу и максимально подробно.»</blockquote>
+        <figcaption><strong>Екатерина Тихомирова</strong><span>Выпускница</span></figcaption>
+      </figure>
+      <figure class="review reveal">
+        <blockquote>«На связи 24/7 и на 1000+% отдают себя на решение любых проблем. Очень тактичны и внимательны. Самая лучшая школа с мегакрутыми преподавателями.»</blockquote>
+        <figcaption><strong>Анастасия Филлипова</strong><span>Выпускница</span></figcaption>
+      </figure>
+      <figure class="review reveal">
+        <blockquote>«Быстрая реакция на вопросы, максимальное разжёвывание информации. Качественный курс, после которого вы научитесь фотореалистичной визуализации.»</blockquote>
+        <figcaption><strong>Виктория Погонщикова</strong><span>Выпускница</span></figcaption>
+      </figure>
+      <figure class="review reveal">
+        <blockquote>«Преподаватели быстро и подробно отвечали на вопросы, советы по фотореалистичности картинок — на вес золота. Обучение дало необходимые навыки.»</blockquote>
+        <figcaption><strong>Алина Метик</strong><span>Дизайнер интерьера</span></figcaption>
+      </figure>
+      <figure class="review reveal">
+        <blockquote>«Я архитектор, в декрете. Со страхами, что с ребёнком не потяну, справилась — заниматься можно в любое время. Получила уровень, о котором не мечтала.»</blockquote>
+        <figcaption><strong>Лариса Чинак</strong><span>Архитектор</span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section section--alt" id="faq">
+  <div class="container container--narrow">
+    <div class="section__head reveal">
+      <span class="eyebrow">FAQ</span>
+      <h2 class="section__title">Частые вопросы</h2>
+    </div>
+    <div class="faq">
+      <details class="faq__item reveal" open>
+        <summary>Для кого этот курс?</summary>
+        <p>Ученикам «с нуля», желающим обрести новую профессию. Архитекторам и дизайнерам, которые хотят эффектно подавать свои проекты. Визуализаторам, желающим перейти с Vray на Corona Renderer.</p>
+      </details>
+      <details class="faq__item reveal">
+        <summary>Что нужно, чтобы приступить к обучению?</summary>
+        <p>Компьютер (минимум 8 ГБ оперативной памяти) и доступ в интернет. Если мощности не хватает — подскажем, как прокачать комп или подобрать комплектующие.</p>
+      </details>
+      <details class="faq__item reveal">
+        <summary>В какое время проходят занятия?</summary>
+        <p>Все уроки в записи. Скачиваете к себе на компьютер и смотрите в любое удобное время. Доступ не ограничен — уроки останутся у вас и через много лет.</p>
+      </details>
+      <details class="faq__item reveal">
+        <summary>Как проходят консультации с преподавателями?</summary>
+        <p>Все ученики добавляются в закрытый чат, где в любое время могут задавать вопросы преподавателям. Поддержка не закрывается после курса.</p>
+      </details>
+      <details class="faq__item reveal">
+        <summary>Что считается итерацией правок?</summary>
+        <p>Список корректировок, направленный визуализатору единовременно. В стоимость входит две итерации. Полная смена концепции — до 90% стоимости.</p>
+      </details>
+      <details class="faq__item reveal">
+        <summary>Сколько ракурсов входит в стоимость?</summary>
+        <p>Количество ракурсов обычно не ограничиваем — делаем столько, сколько нужно, чтобы выгодно показать пространство (по согласованию).</p>
+      </details>
+      <details class="faq__item reveal">
+        <summary>Есть ли рассрочка?</summary>
+        <p>Да. Поможем оформить рассрочку — вы не переплачиваете. Свяжитесь с нами, чтобы узнать подробности.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section class="section section--dark" id="contact">
+  <div class="container contact">
+    <div class="contact__intro reveal">
+      <span class="eyebrow">Всегда на связи</span>
+      <h2 class="section__title">Остались вопросы?<br/><span class="accent">Свяжитесь с нами</span></h2>
+      <p>Расскажем про форматы обучения, подберём оптимальное время и проконсультируем по всем техническим вопросам.</p>
+      <div class="contact__channels">
+        <a class="channel" href="https://t.me/el_zhii" target="_blank" rel="noopener"><span>Telegram</span>@el_zhii</a>
+        <a class="channel" href="https://wa.me/79290002224" target="_blank" rel="noopener"><span>WhatsApp</span>+7 929 000-22-24</a>
+        <a class="channel" href="https://vk.com/el_zhi" target="_blank" rel="noopener"><span>ВКонтакте</span>vk.com/el_zhi</a>
+        <a class="channel" href="https://www.youtube.com/channel/UChHBMDmpAFmwZE9DY-y9QVA" target="_blank" rel="noopener"><span>YouTube</span>CG UpFlow</a>
+      </div>
+    </div>
+    <form class="form reveal" id="contactForm" novalidate>
+      <label><span>Имя</span><input type="text" name="name" required placeholder="Как к вам обращаться"/></label>
+      <label><span>Телефон или Telegram</span><input type="text" name="phone" required placeholder="+7 ___ ___-__-__  или  @nickname"/></label>
+      <label><span>Что вас интересует?</span>
+        <select name="topic">
+          <option>Заказать визуализацию</option>
+          <option>Обучение — Лайт</option>
+          <option>Обучение — Макси</option>
+          <option>Обучение — Премиум</option>
+          <option>Бесплатная консультация</option>
+        </select>
+      </label>
+      <label><span>Сообщение</span><textarea name="msg" rows="4" placeholder="Кратко опишите проект или вопрос"></textarea></label>
+      <button class="btn btn--primary btn--block" type="submit">Отправить заявку</button>
+      <p class="form__note">Нажимая кнопку, вы соглашаетесь с <a href="#">политикой конфиденциальности</a>.</p>
+      <div class="form__success" id="formSuccess">Спасибо! Мы свяжемся с вами в ближайшее время.</div>
+    </form>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__col">
+      <a href="#hero" class="logo">
+        <span class="logo__mark">CG</span>
+        <span class="logo__text">UpFlow</span>
+      </a>
+      <p>Фотореалистичная интерьерная визуализация и онлайн-обучение.</p>
+    </div>
+    <div class="footer__col">
+      <h5>Навигация</h5>
+      <a href="#services">Услуги</a>
+      <a href="#portfolio">Портфолио</a>
+      <a href="#pricing">Тарифы</a>
+      <a href="#reviews">Отзывы</a>
+    </div>
+    <div class="footer__col">
+      <h5>Контакты</h5>
+      <a href="https://t.me/el_zhii" target="_blank" rel="noopener">Telegram</a>
+      <a href="https://wa.me/79290002224" target="_blank" rel="noopener">WhatsApp</a>
+      <a href="https://vk.com/el_zhi" target="_blank" rel="noopener">ВКонтакте</a>
+    </div>
+    <div class="footer__col">
+      <h5>Документы</h5>
+      <a href="#">Договор оферты</a>
+      <a href="#">Политика конфиденциальности</a>
+    </div>
+  </div>
+  <div class="footer__bottom container">
+    <span>© <span id="year"></span> CG UpFlow. Все права защищены.</span>
+    <span>Сделано с вниманием к деталям.</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
